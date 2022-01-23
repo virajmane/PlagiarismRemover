@@ -7,10 +7,11 @@ from flask import Flask, render_template, request
 
 rake_nltk_var = Rake()
 app = Flask(__name__)
-nltk.download('wordnet')
-nltk.download('stopwords')
-nltk.download('omw-1.4')
-nltk.download('punkt')
+nltk.download()
+#nltk.download('wordnet')
+#nltk.download('stopwords')
+#nltk.download('omw-1.4')
+#nltk.download('punkt')
 #installation command: python -m nltk.downloader punkt
 def process(word):
     def get_key_words(text):
